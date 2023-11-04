@@ -19,14 +19,14 @@ try:
     APP_ID = config("APP_ID", default=23165451, cast=int)
     API_HASH = config("API_HASH", default="e82ea34d8f85233fc1d257ffdd2ff9fe")
     BOT_TOKEN = config("6859201439:AAHuaFnx098y5UvH6Y79AHnx6YGO3jhjPuw")
-    DEV = 1322549723
-    OWNER = config("OWNER")
+    DEV = 1715201164
+    OWNER = config("1715201164")
     FFMPEG = config(
         "FFMPEG",
         default='ffmpeg -i "{}" -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{}"',
     )
     THUMB = config(
-        "THUMBNAIL", default="https://graph.org/file/75ee20ec8d8c8bba84f02.jpg"
+        "THUMBNAIL", default="https://graph.org/file/bfc86dbdff124b65a38ca.jpg"
     )
 except Exception as e:
     print("Environment vars Missing")
