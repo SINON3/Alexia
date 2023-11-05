@@ -23,7 +23,7 @@ try:
     OWNER = config("1715201164")
     FFMPEG = config(
         "FFMPEG",
-        default='ffmpeg -i "{}" -map 0 -c copy -c:v libx265  -s 1280x720  -preset ultrafast  -crf 24 -c:a aac -b:a 192k -metadata title="Sonic Otakus" -pix_fmt yuv420p "{}"',
+        default='ffmpeg -i "{}" -map 0 -c copy -c:v libx265  -s 1920x1080  -preset ultrafast  -crf 20 -c:a aac -b:a 192k -metadata title="Sonic Otakus" -pix_fmt yuv420p -metadata:s:a title="Sonic Otakus" -metadata:s:s title="Sonic Otakus" "{}"',
     )
     THUMB = config(
         "THUMBNAIL", default="https://graph.org/file/bfc86dbdff124b65a38ca.jpg"
