@@ -23,7 +23,7 @@ try:
     OWNER = config("1715201164")
     FFMPEG = config(
         "FFMPEG",
-        default='ffmpeg -i "{1080p}" -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{TheShadowGarden}"',
+        default='ffmpeg -i "{1080p}" -preset ultrafast -c:v libx265 -crf 22 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{TheShadowGarden}"',
     )
     THUMB = config(
         "THUMBNAIL", default="https://graph.org/file/bfc86dbdff124b65a38ca.jpg"
